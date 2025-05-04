@@ -1,29 +1,34 @@
 
-body {
-    margin: 0;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.logo-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
 }
-.logo {
-    width: 150px;
-    animation: fadeIn 3s ease-in-out;
+
+.lion-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
-.golden-ring {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 5px solid gold;
-    border-radius: 50%;
-    animation: spin 4s linear infinite;
+
+.gold-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border: 4px solid gold;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+  z-index: 1;
 }
+
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-@keyframes fadeIn {
-    0% { opacity: 0; transform: scale(0.8); }
-    100% { opacity: 1; transform: scale(1); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
