@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="admin-panel">
+    <h2>Upload New Product</h2>
+    <input type="text" id="title" placeholder="Product Name">
+    <input type="file" id="image">
+    <input type="number" id="price" placeholder="Price">
+    <button onclick="uploadProduct()">Upload</button>
+  </div>
+  <div id="success-modal" class="modal hidden">✔ Product Added!</div>
+  <script src="admin.js"></script>
+</body>
+</html>
