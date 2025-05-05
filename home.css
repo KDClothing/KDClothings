@@ -1,7 +1,97 @@
 body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #000;
   color: white;
-  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  align-items: center;
+  background-color: #111;
+}
+
+header h1 {
+  font-size: 24px;
+  color: gold;
+}
+
+#darkModeToggle {
+  background: none;
+  border: 1px solid gold;
+  color: gold;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.deal-banner {
+  background: green;
+  color: white;
   text-align: center;
-  padding-top: 100px;
+  padding: 1em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.product-card {
+  background: #222;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h2 {
+  margin: 0.5em 0;
+  color: #ffd700;
+}
+
+.product-card button {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  background-color: #111;
+}
+
+/* Dark Mode toggle */
+.dark {
+  background-color: white;
+  color: black;
+}
+
+.dark .product-card {
+  background: #f0f0f0;
+  color: black;
+}
+
+.dark #darkModeToggle {
+  border-color: black;
+  color: black;
 }
