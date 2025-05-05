@@ -2,11 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>KD Clothing</title>
+  <title>KD Clothing - Shop</title>
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <h1>Welcome to KD Clothing!</h1>
-  <p>Trendy fits coming your way.</p>
+  <header>
+    <h1>KD Clothing 🦁</h1>
+    <button id="darkModeToggle">🌓</button>
+  </header>
+
+  <section class="deal-banner">
+    🎁 Surprise Deal: 20% OFF on All Graphic Tees Today!
+  </section>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <img src="images/tshirt1.png" alt="Graphic Tee">
+      <h2>Urban Graphic Tee</h2>
+      <p>₹799</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="images/hoodie1.png" alt="Hoodie">
+      <h2>Gold Chain Hoodie</h2>
+      <p>₹1199</p>
+      <button>Add to Cart</button>
+    </div>
+    <!-- Add more products similarly -->
+  </section>
+
+  <footer>
+    <p>© 2025 KD Clothing. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle dark mode
+    document.getElementById("darkModeToggle").onclick = () => {
+      document.body.classList.toggle("dark");
+    };
+  </script>
 </body>
 </html>
