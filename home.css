@@ -120,3 +120,25 @@ footer {
   border-color: black;
   color: black;
 }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+nav li a:hover {
+  background-color: gold;
+  color: black;
+}
