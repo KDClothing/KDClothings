@@ -8,50 +8,44 @@ body {
 
 header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  background-color: #111;
-}
-
-/* ✅ Navigation Bar Styles */
-nav {
-  background-color: #004d40;
-  padding: 10px 0;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 20px;
-}
-
-nav a {
-  text-decoration: none;
+  background-color: #1e1e1e;
   color: white;
-  font-weight: bold;
-  font-size: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
-  font-size: 24px;
-  color: gold;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
 }
 
 #darkModeToggle {
   background: none;
-  border: 1px solid gold;
-  color: gold;
-  padding: 0.5em 1em;
-  border-radius: 20px;
+  border: none;
+  font-size: 1.2em;
   cursor: pointer;
+  color: white;
 }
 
 .deal-banner {
